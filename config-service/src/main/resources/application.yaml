@@ -11,6 +11,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/congtuan0104/ticket-backend-config.git
+          uri: https://github.com/Ryuming/ticket-backend-config.git
           clone-on-start: true
           default-label: main
