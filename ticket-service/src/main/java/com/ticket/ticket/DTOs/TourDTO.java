@@ -1,10 +1,9 @@
-package com.ticket.ticket.entities;
+package com.ticket.ticket.DTOs;
 
 import java.time.LocalDateTime;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
@@ -18,10 +17,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Data
-@Document(collection = "tour")
 
-
-public class Tour {
+public class TourDTO {
     @JsonSerialize(using = ToStringSerializer.class)
     @Id
     private ObjectId tourId;

@@ -43,7 +43,7 @@ public class TicketController {
     public ResponseEntity<PagedResponse<TicketDTO>> getAllTicket()
     {
         try {
-            PagedResponse<TicketDTO> tickets = ticketService.ticketFilterHandler(null, null, null, null, LocalDateTime.parse("1800-01-13T03:09:42.411"), LocalDateTime.parse("2400-01-13T03:09:42.411"), 0, 12);
+            PagedResponse<TicketDTO> tickets = ticketService.ticketFilterHandler("", "", "", "", LocalDateTime.parse("1800-01-13T03:09:42.411"), LocalDateTime.parse("2400-01-13T03:09:42.411"), 0, 12);
             return new ResponseEntity<>(tickets, HttpStatus.OK);
         } catch (Exception e) {
             // TODO: handle exception
