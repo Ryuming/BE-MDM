@@ -1,17 +1,14 @@
-### 1. Registry Service
+### 1. Mở Registry Service
 - Eureka server
 - Java Spring Boot
 - Port: 8761
 - Service dùng để đăng ký thông tin các service khác
 
-### 2. Image Service
-- Java Spring Boot
-- Eureka Client
-- Port: 8200
-- Service dùng để quản lý ảnh
+### 2. Mở Ticket Service
 
-### 3. Gallery Service
+### 3. Mở Gateway
 - Java Spring Boot
 - Eureka Client
-- Port: 8100
-- Service dùng để quản lý thư viện ảnh
+- Port: 8080
+
+### 4. Gọi api thông qua port 8080 của gateway
