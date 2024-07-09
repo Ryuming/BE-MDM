@@ -1,0 +1,7 @@
+{
+    "tourId" : ObjectId("tourId123456789"),
+    "tourName": "Ha Noi - TP. HCM - 8h30",
+    "dateStart": "2017-01-13T00:00:00.000",
+    "signCar": "51A-990.66",
+    "numberCustomer": 24
+}
