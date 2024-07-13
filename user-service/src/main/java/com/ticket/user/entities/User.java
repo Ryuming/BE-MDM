@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
@@ -14,16 +15,16 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 @NoArgsConstructor
 @Builder
 @Data
-@Document(collection = "users")
+@Document(collection = "user")
 public class User {
 
 
     @JsonSerialize(using = ToStringSerializer.class)
-    private ObjectId id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String departmentId;
+    @Id
+    private ObjectId userId;
+    private String phoneNumber;
+    private String residentName;
+    private String residentId;
     private String password;
     private String role;
     

@@ -1,10 +1,7 @@
-package com.ticket.ticket.DTOs;
-
-import java.time.LocalDateTime;
+package com.ticket.user.DTOs;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.redis.core.RedisHash;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
@@ -18,15 +15,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Data
-@RedisHash("tour")
 
-public class TourDTO {
+public class UserDTO {
     @JsonSerialize(using = ToStringSerializer.class)
     @Id
-    private ObjectId tourId;
-    private String tourName;
-    private LocalDateTime dateStart;
-    private String signCar;
-    private int numberCustomer;
-    private int seatLeft;
+    private ObjectId userId;
+    private String phoneNumber;
+    private String residentName;
+    private String residentId;
+    private String role;
 }

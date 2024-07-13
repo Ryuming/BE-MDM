@@ -8,9 +8,8 @@ spring:
 #    import: optional:configserver:http://localhost:9296
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      database: ticket-user
+      uri: mongodb+srv://huynhtrongnghia10012000:18120478@ryucluster.hkwulwu.mongodb.net/?retryWrites=true&w=majority&appName=RyuCluster
+      database: MDM
 
 jwt:
   secret: BvPHGM8C0ia4uOuxxqPD5DTbWC9F9TWvPStp3pb7ARo0oK2mJ3pd3YG4lxA9i8bj6OTbadwezxgeEByY
